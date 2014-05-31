@@ -1,0 +1,640 @@
+﻿
+html {
+}
+
+body {
+    background-color: #FFFFFF;
+    margin: 0;    
+    padding: 0;
+    color:#555555;
+    font-family:'Segoe UI';
+    font-size:14px;
+    font-style:normal;
+}
+
+.divBorder {
+    border:1px solid #00d0ff;
+}
+
+.ClearPaddingMargin {
+    margin: 0;
+    padding: 0;
+}
+
+.colorBlue3D13 {
+    background: #f0f9ff;
+    background: -moz-linear-gradient(top,  #f0f9ff 0%, #cbebff 47%, #a1dbff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f9ff), color-stop(47%,#cbebff), color-stop(100%,#a1dbff));
+    background: -webkit-linear-gradient(top,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%);
+    background: -o-linear-gradient(top,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%);
+    background: -ms-linear-gradient(top,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%);
+    background: linear-gradient(to bottom,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=0 );
+}
+
+.colorWhite3D {
+    background: #f6f6f6; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f6f6f6 0%, #ededed 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f6f6f6 0%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f6f6f6 0%,#ededed 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f6f6f6 0%,#ededed 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f6f6f6 0%,#ededed 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+}
+
+.inputText {
+    border: 1px solid #EEEEEE;
+    width: calc(100% - 12px);
+    padding:5px;
+    color:#555555;
+    margin:5px 0px;
+}
+
+.btn {
+    border: 1px solid #A1DBFF;
+    border-radius: 2px;
+    height: 28px;
+    text-decoration: none;
+    color:#555555;
+}
+
+ul {
+    margin:0px;
+    padding:0px;
+    display:inline;
+    list-style-type: none;
+}
+    ul li {
+        margin:0px;
+        padding:0px;
+        float:left;
+    }
+
+
+
+
+
+
+    
+
+.divContainer {
+    clear: both;
+    margin: auto;
+    min-height: 500px;
+    width: 980px;
+}
+
+
+
+
+
+
+
+
+.divContainerHeader {
+    clear: both;
+    margin: auto auto 20px;
+    min-height: 80px;
+    width: 100%;
+}
+.divContainerHeaderMainBar {
+    float: left;
+    min-height: 80px;
+    width: 740px;
+    border-bottom:2px solid #EEEEEE;
+    padding: 0 0 10px;
+}
+.divContainerHeaderSideBar {
+    background-color: #EEFFEE;
+    float: right;
+    min-height: 80px;
+    width: 220px;
+}
+
+.divSiteLogo {
+    float: left;
+    height: 80px;
+    width: 200px;
+}
+.imgSiteLogo {
+    bottom: 0;
+    height: 80px;
+}
+
+.divPageMenu {
+    float: right;
+    padding-top: 51px;
+    margin-left: 8px;
+    width: auto;
+}
+.btnPageMenu {
+    border: 1px solid #A1DBFF;
+    border-radius: 2px;
+    height: 40px;
+    text-decoration: none;
+    width: 120px;
+}
+
+
+
+
+
+
+
+.divContent {
+    clear: both;
+    margin: auto;
+    min-height: 500px;
+    width: 100%;
+}
+.divContentMainBar {
+    float: left;
+    min-height: 800px;
+    width: 740px;
+}
+.divContentSideBar {
+    background-color: #F0F0F0;
+    float: right;
+    min-height: 500px;
+    width: 220px;
+}
+
+
+
+
+
+
+
+
+.divFooter {
+    background-color: #657F9B;
+    height: 150px;
+    width: 100%;
+}
+.divFooterContent {
+    height: 100%;
+    margin: auto;
+    width: 980px;
+}
+
+
+
+
+
+
+
+
+.divPostSummaryWidget {
+    border-bottom: 1px solid #EEEEEE;
+    min-height: 150px;
+    padding: 15px 0 5px;
+    color:#505050;
+}
+
+.imgPostAuthor {
+    width:50px;
+    height:50px;
+}
+.lbPostAuthorName {
+    color: #4F8FFF;
+    font-size: 18px;
+    font-weight: bold;
+}
+.divPersonActionDetails .lbPostAuthorName {
+    font-size: 15px;
+}
+.lbPostAuthorName:hover {
+    cursor:pointer;
+}
+.lbPostTime {
+    font-size:11px;
+    color:#BBBBBB;
+}
+
+.divPostText {
+}
+
+.divPostAddition {
+    height:30px;
+}
+
+.divPostAddition ul li {
+    margin-right:10px;
+    margin-top:5px;
+}
+.divPostAddition ul li a {
+    color:rgba(68, 79, 255, 0.80);
+    text-decoration:none;
+}
+
+.divPostPopularity {
+    background-color: #EEFFEE;
+    height:30px;
+    padding: 5px 0px 0px 12px;
+}
+.divPostPopularity ul li a {
+    font-size:11px;
+    color:#666666;
+    text-decoration:none;
+}
+.divAddComment {
+    padding-left:12px;
+    background-color: #EEFFEE;
+    height: 50px;
+}
+.divCommentAuthorAvatar {
+    clear: both;
+    float: left;
+    height: 40px;
+    margin-right: 10px;
+    width: 40px;
+}
+.imgCommentAuthorAvatar {
+    height: 40px;
+    width: 40px;
+}
+.divCommentInput {
+    float: left;
+    width: calc(100% - 64px);
+}
+.divCommentInput input {
+    border: 1px solid #EEEEEE;
+    color: #555555;
+    float: left;
+    margin: 5px 10px 5px 0;
+    padding: 5px;
+    width: calc(100% - 90px);
+}
+.divCommentInput button {
+    float: left;
+    margin-top: 5px;
+    width: 60px;
+}
+
+
+
+
+
+
+.divSearch {
+    padding:0px 10px;
+}
+
+.divSearchTitle {
+
+}
+.divSearchTitle label {
+
+}
+
+.divInputSearch {
+    clear:both;
+    width:300px;
+    padding:6px 0px;
+}
+.divInputSearch input {
+}
+
+.divBtnSearch {
+    padding: 11px 10px 0;
+}
+.divBtnSearch button {
+    float:right;
+}
+
+
+
+
+
+
+
+.divTopBar {
+    background-color: #5A7EA3;
+    height: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.divTopBarContent {
+    background-color: #4C6D8C;
+    height: 100%;
+    margin: auto;
+    width: 980px;
+}
+
+.divTopBarContentLeft {
+    float:left;
+}
+.divTopBarContentRight {
+    float:right;
+}
+.ulTopBarElement {
+    margin:0px;
+    padding:0px;
+    display:inline;
+    list-style-type: none;
+}
+.ulTopBarElement li {
+    margin:0px;
+    padding:0px;
+    float:left;
+}
+
+.imgAvatar, .imgBitBook {
+    width:40px;
+    height:40px;
+    padding-top:5px;
+}
+.divAvatarText {
+    padding: 15px;
+}
+.lbTobBarText {
+    color: rgba(255, 255, 255, 0.95);
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.divBtnTopBar {
+    padding:13px 0px;
+}
+.divBtnTopBar button {
+    border:1px solid #4C6D8C;
+    background-color:rgba(255, 255, 255, 0);
+}
+.divBtnTopBar button:hover {
+    border:1px solid #4C6D8C;
+    background-color:rgba(255, 255, 255, 0.50);
+    color:#4C6D8C;
+}
+
+
+
+
+.divContentMainBar {
+    float: left;
+    min-height: 500px;
+    width: 740px;
+}
+
+
+
+
+.divContentSideBar {
+    background-color: #EEFFEE;
+    float: right;
+    min-height: 800px;
+    width: 220px;
+}
+
+
+
+
+.divPersonWidget {
+    border: 1px solid #EEEEEE;
+    color: #505050;
+    padding: 5px;
+    width: 160px;
+    margin: 10px 10px 10px 0;
+    height:215px;
+    float:left;
+}
+.divPersonWidget label {
+    color:#4F8FFF;
+}
+.divPersonWidget label:hover {
+    cursor:pointer;
+}
+.divPersonWidget button {
+    float: right;
+    font-size: 11px;
+    margin-right: 5px;
+    width: 72px;
+}
+
+.imgPersonAvatar {
+    height:160px;
+    width:160px;
+}
+
+
+
+
+
+.divWritePost {
+    border-bottom: 1px solid #EEEEEE;
+    min-height: 150px;
+    padding-bottom: 5px;
+}
+
+.divPostTitle {
+
+}
+.divPostTitle label {
+    color: #777777;
+    font-weight: bold;
+}
+
+.divInputPost {
+    clear:both;
+    padding:6px 0px;
+}
+.divInputPost input, .divInputPost textarea {
+    font-family: segoe ui;
+    font-size: 14px;
+}
+
+.divBtnPost {
+    height: 30px;
+}
+.divBtnPost button {
+    float:right;
+    width:100px;
+}
+
+
+
+
+
+
+
+.divPersonActionTitle {
+    background-color: #EEFFEE;
+    border-bottom: 1px solid #EEEEEE;
+    color: #999999;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+}
+.lbPersonActionTitle {
+
+}
+.divPersonActionHead {
+    background-color: #EEFFEE;
+    border-bottom: 1px solid #EEEEEE;
+    color: #505050;
+    min-height: 45px;
+    padding: 7px 12px 0;
+}
+
+.divPersonActionAvatar {
+    height:40px;
+    float:left;
+}
+.imgPersonActionAvatar {
+    width:40px;
+    height:40px;
+}
+.divPersonActionDetails {
+    float: right;
+    padding-top:8px;
+    width: 665px;
+}
+.pPersonActionText {
+    margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.divProfile {
+    border-bottom:1px solid #EEEEEE;
+    padding: 12px 0 40px;
+}
+.lbProfileTitle {
+    font-size:16px;
+    color:#777777;
+    font-weight:bold;
+}
+.divProfileAvatar {
+    height: 190px;
+    margin-right: 10px;
+    overflow: hidden;
+    width: 150px;
+    min-height:200px;
+}
+.fileUploadProfileAvatar {
+    height: 32px;
+    left: 0;
+    position: relative;
+    top: -30px;
+    opacity:0;
+}
+.divProfileName {
+    float:left;
+}
+.imgProfileAvatar {
+    height: 150px;
+    width: 150px;
+}
+
+.divProfileDetailsList {
+    border-top:1px solid #EEEEEE;
+}
+.divProfileDetails {
+    border-bottom: 1px solid #EEFFEE;
+    min-height: 30px;
+    padding: 7px 0 1px;
+}
+.divProfileDetailsLeft {
+    width:200px;
+    float:left;
+    margin-left:20px;
+}
+.divProfileDetailsLeft label {
+    color:#777777;
+    font-weight:bold;
+}
+.divProfileDetailsRight {
+    float:left;
+    width:460px;
+}
+
+
+.divEditProfileDetailsList {
+    border-top:1px solid #EEEEEE;
+}
+
+.divProfileDetails input, .divProfileDetails textarea {
+    margin-top:-2px;
+}
+
+
+
+
+
+.divNotificationPopup {
+    background-color: #EEFFEE;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    bottom: 80px;
+    height: 45px;
+    left: 80px;
+    overflow: hidden;
+    padding: 10px 15px;
+    position: fixed;
+    width: 250px;
+}
+.divNotificationPopupText {
+    height: 48px;
+    overflow: hidden;
+}
+
+.divLoginHead {
+}
+.divLoginHead ul li {
+    margin-left:5px;
+}
+.divLoginHead ul li input {
+    margin-top:11px;
+}
+
+
+
+
+
+.divSignUp {
+    width:980px;
+    margin:auto;
+    min-height:500px;
+}
+.divSignUpBanner {
+    float: left;
+    margin-top: 30px;
+    min-height: 400px;
+    width: 515px;
+}
+.imgSignUpBanner {
+    width:400px;
+    height:400px;
+}
+
+.divSignUpFormTitle {
+    padding:25px 0px;
+}
+.divSignUpForm {
+    width:458px;
+    float:right;
+    min-height:500px;
+}
+.divSignUpFormTitle label {
+    font-size:20px;
+    color:#777777;
+}
+.divSignUpFormRow {
+    height:70px;
+}
+.divSignUpPropName {
+
+}
+.divSignUpPropValue {
+
+}

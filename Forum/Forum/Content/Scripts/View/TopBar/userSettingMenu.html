@@ -1,0 +1,15 @@
+﻿<ul class="ulTopBarElement">
+    <li ng-click="showUserProfile()">
+        <img class="imgAvatar" src="/Content/Images/UserAvatar.png" />
+    </li>
+    <li ng-click="showUserProfile('own')">
+        <div class="divBtnTopBar">
+            <Button class="lbTobBarText">{{userFullName}}</Button>
+        </div>
+    </li>
+    <li>
+        <div class="divBtnTopBar">
+            <Button ng-click="logOut()" class="lbTobBarText">Logout</Button>
+        </div>
+    </li>
+</ul>

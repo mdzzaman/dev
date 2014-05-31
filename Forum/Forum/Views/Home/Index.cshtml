@@ -1,0 +1,60 @@
+﻿@model Forum.Models.LoginModel
+@{
+    ViewBag.Title = "My Todo List";
+}
+@functions{
+    public string GetAntiForgeryToken()
+    {
+        string cookieToken, formToken;
+        AntiForgery.GetTokens(null, out cookieToken, out formToken);
+        return cookieToken + ":" + formToken;                
+    }
+}
+
+<div id="main-content">
+@if (@User.Identity.IsAuthenticated)
+{
+    <div class="divContainer" ng-include="mainBodyView">
+        <div ng-include="headerView" class="divContainerHeader">
+        </div>
+        <div ng-include="contentViewurl" class="divContent">
+        </div>
+    </div>
+}
+else
+{
+    <div class="logoffUserArea">
+        <div class="todoList" id="loginPanel">
+            <section id="localLoginPanel">
+                <h2>Login BitBook</h2>
+                @Html.Partial("_Login")
+            </section>
+            <section id="socialLoginPanel">
+                <h2>Log in using another service</h2>
+                @Html.Action("ExternalLoginsList", "Account", new { ReturnUrl = ViewBag.ReturnUrl })
+            </section>
+            <p>First time here? <a id="showRegister">Sign up</a></p>
+        </div>
+        <div class="todoList" id="registerPanel">
+            <h2>Create a BitBook Account</h2>
+            @Html.Partial("_Register")
+            <p>Already signed up? <a id="showLogin">Log in</a></p>
+        </div>
+    </div>
+}
+</div>
+
+
+@if (@User.Identity.IsAuthenticated)
+{
+    @section scripts {
+        <script src="~/Content/Scripts/angular.js"></script>
+        <script src="~/Content/Scripts/Directive/ng-grid.debug.js"></script>
+        <script src="~/Content/Scripts/Module/MainModule.js"></script>
+        <script src="~/Content/Scripts/Service/lazyLoading.js"></script>
+        <script src="~/Content/Scripts/Service/controllerService.js"></script>
+        <script src="~/Content/Scripts/Controller/homeController.js"></script>
+        <script src="~/Content/Scripts/require.js"></script>
+        <script src="~/Content/Scripts/Dependency/Dependency.js"></script>
+    }
+}

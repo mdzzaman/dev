@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ForumModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ForumModelStoreContainer">
+    <EntitySet Name="OAuthMembership" EntityType="ForumModel.Store.OAuthMembership" store:Type="Tables" store:Schema="dbo" store:Name="OAuthMembership">
+      <DefiningQuery>SELECT 
+      [OAuthMembership].[Provider] AS [Provider], 
+      [OAuthMembership].[ProviderUserId] AS [ProviderUserId], 
+      [OAuthMembership].[UserId] AS [UserId]
+      FROM [dbo].[OAuthMembership] AS [OAuthMembership]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="User" EntityType="ForumModel.Store.User" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserRole" EntityType="ForumModel.Store.UserRole" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_User_UserRole" Association="ForumModel.Store.FK_User_UserRole">
+      <End Role="UserRole" EntitySet="UserRole" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Forum.dbo.OAuthMembership' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="OAuthMembership">
+    <Key>
+      <PropertyRef Name="Provider" />
+      <PropertyRef Name="ProviderUserId" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="Provider" Type="nchar" Nullable="false" MaxLength="30" />
+    <Property Name="ProviderUserId" Type="nchar" Nullable="false" MaxLength="100" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="LastName" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="Email" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="Username" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="Password" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="UserRoleId" Type="int" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="UserRoleId" />
+    </Key>
+    <Property Name="UserRoleId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserRoleName" Type="nchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_User_UserRole">
+    <End Role="UserRole" Type="ForumModel.Store.UserRole" Multiplicity="1" />
+    <End Role="User" Type="ForumModel.Store.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserRole">
+        <PropertyRef Name="UserRoleId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="UserRoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

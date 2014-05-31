@@ -1,0 +1,10 @@
+﻿    <div ng-repeat="item in model.personWidgets" class="divPersonWidget">
+        <label ng-click="ShowUserProfile(item.userId)">{{item.name}}</label>    
+        <img class="imgPersonAvatar" src="/Content/Images/{{item.userPic}}" />
+        <div class="divBtnAddFriend">
+            <button ng-click="sendRequest(item,$event)" class="btn">{{getButtonText(item)}}</button>
+        </div>
+        <div ng-click="cancelRequest(item,$event)" ng-show="item.isRequested" class="divBtnCancel">
+            <button class="btn">Reject</button>
+        </div>
+    </div>

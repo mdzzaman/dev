@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ForumModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ForumModelStoreContainer">
+    <EntitySet Name="ContactReasons" EntityType="ForumModel.Store.ContactReasons" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Messages" EntityType="ForumModel.Store.Messages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OAuthMembership" EntityType="ForumModel.Store.OAuthMembership" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User" EntityType="ForumModel.Store.User" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserProfile" EntityType="ForumModel.Store.UserProfile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserRole" EntityType="ForumModel.Store.UserRole" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Messages_ContactReasons" Association="ForumModel.Store.FK_Messages_ContactReasons">
+      <End Role="ContactReasons" EntitySet="ContactReasons" />
+      <End Role="Messages" EntitySet="Messages" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ContactReasons">
+    <Key>
+      <PropertyRef Name="ContactReasonId" />
+    </Key>
+    <Property Name="ContactReasonId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ContactReasonText" Type="nvarchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Messages">
+    <Key>
+      <PropertyRef Name="MessageId" />
+    </Key>
+    <Property Name="MessageId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ContactReasonId" Type="int" />
+    <Property Name="Subject" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Message" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OAuthMembership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="Provider" Type="nchar" Nullable="false" MaxLength="30" />
+    <Property Name="ProviderUserId" Type="nchar" Nullable="false" MaxLength="100" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="nchar" MaxLength="100" />
+    <Property Name="LastName" Type="nchar" MaxLength="100" />
+    <Property Name="Email" Type="nchar" MaxLength="100" />
+    <Property Name="Username" Type="nchar" MaxLength="100" />
+    <Property Name="Password" Type="nchar" MaxLength="100" />
+    <Property Name="UserRoleId" Type="int" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="UserRoleId" />
+    </Key>
+    <Property Name="UserRoleId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserRoleName" Type="nchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Messages_ContactReasons">
+    <End Role="ContactReasons" Type="ForumModel.Store.ContactReasons" Multiplicity="0..1" />
+    <End Role="Messages" Type="ForumModel.Store.Messages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContactReasons">
+        <PropertyRef Name="ContactReasonId" />
+      </Principal>
+      <Dependent Role="Messages">
+        <PropertyRef Name="ContactReasonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

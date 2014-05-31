@@ -1,0 +1,38 @@
+﻿
+
+<div class="divPostSummaryWidget">
+    <div ng-repeat="item in model.posts" class="">
+        <div ng-controller="postController">
+        <div class="divPostAuthor">
+            <img class="imgPostAuthor" src="/Content/Images/{{item.userPic}}" />
+            <label ng-click="ShowUserProfile(item.UserId)" class="lbPostAuthorName">{{item.postUser}}</label>
+            <label class="lbPostTime">{{item.createdAt}}</label>
+        </div>
+        <div class="divPostText">
+            <p class="pPostText">
+                {{item.text}}
+            </p>
+        </div>
+        <div class="divPostAddition">
+            <ul>
+                <li><a ng-click="Like(item,$event)" class="aPostLike" href="#">{{LikeText(item.isLike)}}</a></li>
+            </ul>
+        </div>
+        <div class="divPostPopularity">
+            <ul>
+                <li><a ng-click="ViewLikeDetails(item)" class="aPostLiked" href="#">{{item.totalLikes}} likes-</a></li>
+                <li><a ng-click="ViewCommentDetails(item)" class="aPostCommented" href="#">-{{item.commentCount}} Comments</a></li>
+            </ul>
+        </div>
+        <div class="divAddComment">
+            <div class="divCommentAuthorAvatar">
+                <img class="imgCommentAuthorAvatar" src="/Content/Images/UserAvatar.png" />
+            </div>
+            <div class="divCommentInput">
+                <input ng-model="item.newCommentText" class="inputText" />
+                <button ng-click="Comment(item)" class="btn">Add</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

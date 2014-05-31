@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ForumModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ForumEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="ContactReasons" EntityType="ForumModel.ContactReason" />
+    <EntitySet Name="Messages" EntityType="ForumModel.Message" />
+    <EntitySet Name="OAuthMemberships" EntityType="ForumModel.OAuthMembership" />
+    <EntitySet Name="Users" EntityType="ForumModel.User" />
+    <EntitySet Name="UserProfiles" EntityType="ForumModel.UserProfile" />
+    <EntitySet Name="UserRoles" EntityType="ForumModel.UserRole" />
+    <AssociationSet Name="FK_Messages_ContactReasons" Association="ForumModel.FK_Messages_ContactReasons">
+      <End Role="ContactReasons" EntitySet="ContactReasons" />
+      <End Role="Messages" EntitySet="Messages" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ContactReason">
+    <Key>
+      <PropertyRef Name="ContactReasonId" />
+    </Key>
+    <Property Name="ContactReasonId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ContactReasonText" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Messages" Relationship="ForumModel.FK_Messages_ContactReasons" FromRole="ContactReasons" ToRole="Messages" />
+  </EntityType>
+  <EntityType Name="Message">
+    <Key>
+      <PropertyRef Name="MessageId" />
+    </Key>
+    <Property Name="MessageId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ContactReasonId" Type="Int32" />
+    <Property Name="Subject" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Message1" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="ContactReason" Relationship="ForumModel.FK_Messages_ContactReasons" FromRole="Messages" ToRole="ContactReasons" />
+  </EntityType>
+  <EntityType Name="OAuthMembership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="Provider" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="true" />
+    <Property Name="ProviderUserId" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="true" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="100" Unicode="true" FixedLength="true" />
+    <Property Name="LastName" Type="String" MaxLength="100" Unicode="true" FixedLength="true" />
+    <Property Name="Email" Type="String" MaxLength="100" Unicode="true" FixedLength="true" />
+    <Property Name="Username" Type="String" MaxLength="100" Unicode="true" FixedLength="true" />
+    <Property Name="Password" Type="String" MaxLength="100" Unicode="true" FixedLength="true" />
+    <Property Name="UserRoleId" Type="Int32" />
+    <Property Name="Deleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="UserRoleId" />
+    </Key>
+    <Property Name="UserRoleId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="UserRoleName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="true" />
+  </EntityType>
+  <Association Name="FK_Messages_ContactReasons">
+    <End Role="ContactReasons" Type="ForumModel.ContactReason" Multiplicity="0..1" />
+    <End Role="Messages" Type="ForumModel.Message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContactReasons">
+        <PropertyRef Name="ContactReasonId" />
+      </Principal>
+      <Dependent Role="Messages">
+        <PropertyRef Name="ContactReasonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

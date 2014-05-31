@@ -1,0 +1,78 @@
+﻿
+<div ng-controller="userProfileController" class="divProfile">
+    <label class="lbProfileTitle">Profile</label>
+    <div class="divProfileAvatar">
+        <img class="imgProfileAvatar" src="/Content/Images/UserAvatar.png" />
+        <button class="btn" style="width: 100%;">Change</button>
+        <input type="file" class="fileUploadProfileAvatar" />
+    </div>
+    <div class="divProfileDetailsList">
+        <div class="divProfileDetails">
+            <div class="divProfileDetailsLeft">
+                <label>Name</label>
+            </div>
+            <div class="divProfileDetailsRight">
+                <label class="lbNameValue">{{model.Name}}</label>
+            </div>
+        </div>
+        <div class="divProfileDetails">
+            <div class="divProfileDetailsLeft">
+                <label>Email</label>
+            </div>
+            <div class="divProfileDetailsRight">
+                <label class="lbEmailValue">{{model.Email}}</label>
+            </div>
+        </div>
+        <div class="divProfileDetails">
+            <div class="divProfileDetailsLeft">
+                <label>Basic Information</label>
+            </div>
+            <div class="divProfileDetailsRight">
+                <label class="lbInfoValue">{{model.Location}}</label>
+            </div>
+        </div>
+        <div class="divProfileDetails">
+            <button ng-show="model.isEditable" ng-click="showEdit()" class="btn btnProfileEdit" style="float: right; width: 60px;">Edit</button>
+        </div>
+    </div>
+    <div novalidate ng-show="model.isEdit" class="divEditProfileDetailsList">
+        <div class="divProfileDetails">
+            <div class="divProfileDetailsLeft">
+                <label>Name</label>
+            </div>
+            <div class="divProfileDetailsRight">
+                <input ng-model="model.Name" type="text" class="inputText" required  />
+            </div>
+        </div>
+        <input type="hidden" ng-model="model.Email" />
+        <div class="divProfileDetails">
+            <div class="divProfileDetailsLeft">
+                <label>Password</label>
+            </div>
+            <div class="divProfileDetailsRight">
+                <input ng-model="model.Password" type="password" class="inputText inputPassword" required  />
+            </div>
+        </div>
+        <div class="divProfileDetails">
+            <div class="divProfileDetailsLeft">
+                <label>Confirm Password</label>
+            </div>
+            <div class="divProfileDetailsRight">
+                <input ng-model="model.confirmPassword" type="password" class="inputText inputConfirmPassword" required  />
+            </div>
+        </div>
+        <div class="divProfileDetails">
+            <div class="divProfileDetailsLeft">
+                <label>Basic Information</label>
+            </div>
+            <div class="divProfileDetailsRight">
+                <textarea ng-model="model.Location" rows="4" class="inputText"></textarea>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="divProfileDetails">
+            <button ng-click="submitForm()" class="btn btnProfileSave" style="float: right; width: 60px;">Save</button>
+        </div>
+    </div>
+</div>
+

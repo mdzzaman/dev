@@ -1,0 +1,110 @@
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\Forum.Tests.dll.config
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\Forum.Tests.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\Forum.Tests.pdb
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\Forum.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Net.Http.Formatting.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Web.Helpers.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Web.Http.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Web.Http.WebHost.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Web.Mvc.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Web.Razor.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Web.WebPages.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\EntityFramework.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Web.Optimization.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Web.Http.Tracing.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.AspNet.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.Core.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.OAuth.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.OpenId.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\Forum.pdb
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Net.Http.Formatting.xml
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Web.Helpers.xml
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Web.Http.xml
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Web.Http.WebHost.xml
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Web.Mvc.xml
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Web.Razor.xml
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Web.WebPages.xml
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\EntityFramework.xml
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\System.Web.Http.Tracing.xml
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.AspNet.xml
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.Core.xml
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.OAuth.xml
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.OpenId.xml
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\obj\Debug\Forum.Tests.csprojResolveAssemblyReference.cache
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\obj\Debug\Forum.Tests.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\obj\Debug\Forum.Tests.pdb
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\MongoDB.Bson.dll
+E:\E\IQrasys\Code Warrior\Forum\Forum.Tests\bin\Debug\MongoDB.Driver.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\Forum.Tests.dll.config
+E:\contest\Forum\Forum.Tests\bin\Debug\Forum.Tests.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\Forum.Tests.pdb
+E:\contest\Forum\Forum.Tests\bin\Debug\Forum.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Net.Http.Formatting.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.Helpers.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.Http.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.Http.WebHost.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.Mvc.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.Razor.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.WebPages.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\EntityFramework.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.Optimization.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\MongoDB.Bson.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\MongoDB.Driver.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.Http.Tracing.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.AspNet.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.Core.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.OAuth.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.OpenId.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\Forum.pdb
+E:\contest\Forum\Forum.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Net.Http.Formatting.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.Helpers.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.Http.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.Http.WebHost.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.Mvc.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.Razor.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.WebPages.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\EntityFramework.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.Http.Tracing.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.AspNet.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.Core.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.OAuth.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\DotNetOpenAuth.OpenId.xml
+E:\contest\Forum\Forum.Tests\obj\Debug\Forum.Tests.csprojResolveAssemblyReference.cache
+E:\contest\Forum\Forum.Tests\obj\Debug\Forum.Tests.dll
+E:\contest\Forum\Forum.Tests\obj\Debug\Forum.Tests.pdb
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.Http.Cors.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.Cors.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\System.Web.Http.Cors.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\Owin.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\Microsoft.Owin.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+E:\contest\Forum\Forum.Tests\bin\Debug\Microsoft.Owin.xml
+E:\contest\Forum\Forum.Tests\bin\Debug\Microsoft.AspNet.SignalR.Core.xml

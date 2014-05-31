@@ -1,0 +1,19 @@
+﻿
+<div ng-controller="commentDetailController" id="commentDetailView">
+    <div class="divPersonActionTitle">
+        <label class="lbPersonActionTitle">{{model.headerText}}</label>
+    </div>
+    <div ng-repeat="item in model.comments" class="divPersonActionHead">
+        <div class="divPersonActionAvatar">
+            <img class="imgPersonActionAvatar" src="/Content/Images/UserAvatar.png" />
+        </div>
+        <div class="divPersonActionDetails">
+            <label ng-click="ShowUserProfile(item.userId)" class="lbPostAuthorName">{{item.postUser}}</label>
+            <label class="lbPostTime"> {{item.createdAt}}</label>
+            <p class="pPersonActionText">
+                {{item.text}}
+            </p>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+</div>
